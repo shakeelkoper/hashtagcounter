@@ -64,7 +64,7 @@
         margin-right: 0.5rem;
         font-family: "Abril Fatface", serif;
         line-height: 1;
-        margin-top: 20px
+        margin-top: 20px;
       }
       h1 {
         position: relative;
@@ -97,6 +97,9 @@
       h1:after {
         right: -20px;
       }
+      main div{
+        display: block;
+      }
     </style>
   </head>
   <body>
@@ -108,12 +111,19 @@
     <![endif]-->
     <main>
       <h1>HashTag Counter</h1>
-      <textarea id="textarea" placeholder="#Tags" cols="30" rows="5"></textarea>
-      <br />
-      <button onclick="hashTagCounter()" class="button-54" role="button">
-        Count
-      </button>
-      <div id="count"></div>
+      <div>
+        <textarea
+          id="textarea"
+          placeholder="#Tags"
+          cols="30"
+          rows="5"
+        ></textarea>
+        <br />
+        <button onclick="hashTagCounter()" class="button-54" role="button">
+          Count
+        </button>
+        <div id="count"></div>
+      </div>
       <!-- <div id="validTags"></div> -->
     </main>
     <!-- <script defer src="https://pyscript.net/alpha/pyscript.js"></script> -->
