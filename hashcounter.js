@@ -1,6 +1,7 @@
 const input = "#a bc #xyz";
 function hashTagCounter() {
-  const myArray = input.split(" ");
+  const userInput = document.getElementById("textarea").value
+  const myArray = userInput.split(" ");
   const final_list = myArray.filter(checkHasTag);
   console.log(final_list);
   console.log(final_list.length);
